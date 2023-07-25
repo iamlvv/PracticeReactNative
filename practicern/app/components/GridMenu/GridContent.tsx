@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Dimensions } from "react-native"
+import { View, Text, StyleSheet, Dimensions, TouchableOpacity } from "react-native"
 import React from "react"
 import { FontAwesome } from "@expo/vector-icons"
 type Props = {}
@@ -36,10 +36,17 @@ const GridContent = (props: Props) => {
       <View style={styles.gridContainer}>
         <View style={styles.gridRow}>
           {gridContent.slice(0, 4).map((item, index) => (
-            <View key={index} style={styles.gridContent}>
+            <TouchableOpacity
+              key={index}
+              style={styles.gridContent}
+              onLayout={(event) => {
+                var { x, y, width, height, target } = event.nativeEvent.layout
+                console.log("GridContent.tsx: ", x, y, width, height, target)
+              }}
+            >
               <FontAwesome name="home" size={24} color="black" />
               <Text>{item}</Text>
-            </View>
+            </TouchableOpacity>
           ))}
         </View>
         <View style={styles.gridRow}>
@@ -89,6 +96,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5f5",
     padding: 2,
     border: "1px solid black",
+    borderRadius: 16,
   },
 })
 export default GridContent
