@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Menu"
+    },
+    {
+        "id": 2,
+        "name": "Cart"
+    },
+    {
+        "id": 3,
+        "name": "Tools"
+    },
+    {
+        "id": 4,
+        "name": "Find"
+    },
+    {
+        "id": 5,
+        "name": "User"
+    }
+]

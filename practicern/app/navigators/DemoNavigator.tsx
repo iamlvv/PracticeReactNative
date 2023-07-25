@@ -5,10 +5,13 @@ import { TextStyle, ViewStyle } from "react-native"
 import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { Icon } from "../components"
 import { translate } from "../i18n"
-import { DemoCommunityScreen, DemoShowroomScreen, DemoDebugScreen } from "../screens"
+import { DemoCommunityScreen, DemoDebugScreen } from "../screens"
 import { DemoPodcastListScreen } from "../screens/DemoPodcastListScreen"
 import { colors, spacing, typography } from "../theme"
 import { AppStackParamList, AppStackScreenProps } from "./AppNavigator"
+import NPTraining from "app/screens/NPTraining"
+import GridMenu from "app/screens/GridMenu"
+import QRScanScreen from "app/screens/QRScanScreen"
 
 export type DemoTabParamList = {
   DemoCommunity: undefined
@@ -45,8 +48,8 @@ export function DemoNavigator() {
       }}
     >
       <Tab.Screen
-        name="DemoShowroom"
-        component={DemoShowroomScreen}
+        name="NPTraining"
+        component={NPTraining}
         options={{
           tabBarLabel: translate("demoNavigator.componentsTab"),
           tabBarIcon: ({ focused }) => (
@@ -57,7 +60,7 @@ export function DemoNavigator() {
 
       <Tab.Screen
         name="DemoCommunity"
-        component={DemoCommunityScreen}
+        component={GridMenu}
         options={{
           tabBarLabel: translate("demoNavigator.communityTab"),
           tabBarIcon: ({ focused }) => (
@@ -68,7 +71,7 @@ export function DemoNavigator() {
 
       <Tab.Screen
         name="DemoPodcastList"
-        component={DemoPodcastListScreen}
+        component={QRScanScreen}
         options={{
           tabBarAccessibilityLabel: translate("demoNavigator.podcastListTab"),
           tabBarLabel: translate("demoNavigator.podcastListTab"),
@@ -77,7 +80,7 @@ export function DemoNavigator() {
           ),
         }}
       />
-
+      {/* 
       <Tab.Screen
         name="DemoDebug"
         component={DemoDebugScreen}
@@ -87,7 +90,7 @@ export function DemoNavigator() {
             <Icon icon="debug" color={focused && colors.tint} size={30} />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   )
 }

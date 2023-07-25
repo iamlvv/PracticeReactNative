@@ -6,4 +6,5 @@ export * from "./DemoDebugScreen"
 export * from "./DemoShowroomScreen/DemoShowroomScreen"
 // @demo remove-block-end
 export * from "./ErrorScreen/ErrorBoundary"
+export * from "./NPTraining"
 // export other screens here
