@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Trang chu",
+        "active": false
+    },
+    {
+        "name": "Tinh toan son",
+        "active": false
+    },
+    {
+        "name":"Danh muc mau",
+        "active": false
+    },
+    {
+        "name": "Phoi mau 3D",
+        "active": false
+    },
+    {
+        "name": "Tim nhanh",
+        "active": false
+    },
+    {
+        "name": "Kiem tra ma",
+        "active": false
+    },
+    {
+        "name": "Mua hang",
+        "active": false
+    },
+    {
+        "name": "Ve Johton",
+        "active": false
+    },
+    {
+        "name": "Tim dai ly",
+        "active": false
+    },
+    {
+        "name": "Dich vu son",
+        "active": false
+    },
+    {
+        "name": "thanh vien",
+        "active": false
+    },
+    {
+        "name": "Tai khoan",
+        "active": false
+    },
+    {
+        "name": "Khuyen mai",
+        "active": false
+    },
+    {
+        "name": "Quet ma tich diem",
+        "active": false
+    },
+    {
+        "name": "San pham",
+        "active": false
+    }
+  ]
